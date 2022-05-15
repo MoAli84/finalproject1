@@ -254,12 +254,19 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">Educational Stage:</th>
-                                                                    <td colspan="2">#</td>
+                                                                    @foreach ( $data as $info )
+                                                                         <td colspan="2" >{{ $info->level }}</td>
+
+                                                                    @endforeach
+                                                                   
 
                                                                 </tr>
                                                                 <tr>
-                                                                    <th scope="row">Level:</th>
-                                                                    <td colspan="2">#</td>
+                                                                    <th scope="row">Sublevel</th>
+                                                                    @foreach ( $data as $info )
+                                                                    <td colspan="2" >{{ $info->sublev }}</td>
+
+                                                               @endforeach
 
                                                                 </tr>
                                                                 

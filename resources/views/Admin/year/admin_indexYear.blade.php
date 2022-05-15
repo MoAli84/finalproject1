@@ -39,52 +39,7 @@
         
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown">
-            <!-- <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="icon-bell mx-0"></i>
-              <span class="count"></span>
-            </a> -->
-            <!-- <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-success">
-                    <i class="ti-info-alt mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    Just now
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-warning">
-                    <i class="ti-settings mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Settings</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    Private message
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-info">
-                    <i class="ti-user mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    2 days ago
-                  </p>
-                </div>
-              </a>
-            </div> -->
+        
           </li>
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
@@ -101,11 +56,7 @@
               </a>
             </div>
           </li>
-          <!-- <li class="nav-item nav-settings d-none d-lg-flex">
-            <a class="nav-link" href="#">
-              <i class="icon-ellipsis"></i>
-            </a>
-          </li> -->
+        
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
             <span class="icon-menu"></span>
@@ -142,104 +93,7 @@
          
         </ul>
         <div class="tab-content" id="setting-content">
-          <!-- <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
-            <div class="add-items d-flex px-3 mb-0">
-              <form class="form w-100">
-                <div class="form-group d-flex">
-                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
-                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
-                </div>
-              </form>
-            </div>
-            <div class="list-wrapper px-3">
-              <ul class="d-flex flex-column-reverse todo-list">
-                <li>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox">
-                      Add New Student
-                    </label>
-                  </div>
-                  <i class="remove ti-close"></i>
-                </li>
-                <li>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="checkbox" type="checkbox">
-                      Check Student Profile 
-                    </label>
-                  </div>
-                  <i class="remove ti-close"></i>
-                </li>
-               
-               
-               
-              </ul>
-            </div>
-           
-            
-           
-          </div> -->
-          <!-- To do section tab ends -->
-          <!-- <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
-            <div class="d-flex align-items-center justify-content-between border-bottom">
-              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
-              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
-            </div>
-            <ul class="chat-list">
-              <li class="list active">
-                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Thomas Douglas</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">19 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <div class="wrapper d-flex">
-                    <p>Catherine</p>
-                  </div>
-                  <p>Away</p>
-                </div>
-                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
-                <small class="text-muted my-auto">23 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Daniel Russell</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">14 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <p>James Richardson</p>
-                  <p>Away</p>
-                </div>
-                <small class="text-muted my-auto">2 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Madeline Kennedy</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">5 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Sarah Graves</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">47 min</small>
-              </li>
-            </ul>
-          </div> -->
+        
           <!-- chat tab ends -->
         </div>
       </div>
@@ -247,43 +101,62 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="staff.html">
-              <i class="icon-grid menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
-            </a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="icon-head menu-icon"></i>
-              <span class="menu-title">Staff</span>
-            </a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="staff.html">
+                    <i class="icon-grid menu-icon"></i>
+                    <span class="menu-title">Dashboard</span>
+                </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="material-t.html">
-              <i class="icon-book menu-icon"></i>
-              <span class="menu-title">Material</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('admin/index/year') }}">
-              <i class="icon-circle-plus menu-icon"></i>
-              <span class="menu-title">Year </span>
-              
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nationality-t.html">
-              <i class="icon-flag menu-icon"></i>
-              <span class="menu-title">Nationality </span>
-            </a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="staff-t.html">
+                    <i class="icon-head menu-icon"></i>
+                    <span class="menu-title">Staff</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('admin/index/year') }}">
+                    <i class="icon-circle-plus menu-icon"></i>
+                    <span class="menu-title">Year </span>
+
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('admin/index/level') }}">
+                  <i class="icon-flag menu-icon"></i>
+                  <span class="menu-title">Level </span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('admin/index/sublevel') }}">
+                  <i class="icon-flag menu-icon"></i>
+                  <span class="menu-title">Sublevel </span>
+                </a>
+              </li>
+
+             
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('admin/index/course') }}">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">Courses</span>
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('admin/index/nationality') }}">
+                    <i class="icon-flag menu-icon"></i>
+                    <span class="menu-title">Nationality </span>
+                </a>
+            </li>
          
-        
+
+
         </ul>
-      </nav>
+    </nav>
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">

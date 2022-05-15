@@ -129,12 +129,6 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="material-t.html">
-                            <i class="icon-book menu-icon"></i>
-                            <span class="menu-title">Material</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="{{ url('admin/index/year') }}">
                             <i class="icon-circle-plus menu-icon"></i>
                             <span class="menu-title">Year </span>
@@ -143,19 +137,35 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{  url('admin/index/level')  }}">
-                            <i class="icon-head menu-icon"></i>
-                            <span class="menu-title">Academic Stage</span>
+                        <a class="nav-link" href="{{ url('admin/index/level') }}">
+                          <i class="icon-flag menu-icon"></i>
+                          <span class="menu-title">Level </span>
+                        </a>
+                      </li>
+            
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url('admin/index/sublevel') }}">
+                          <i class="icon-flag menu-icon"></i>
+                          <span class="menu-title">Sublevel </span>
+                        </a>
+                      </li>
+
+                     
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('admin/index/course') }}">
+                            <i class="icon-book menu-icon"></i>
+                            <span class="menu-title">Courses</span>
                         </a>
                     </li>
-
-
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('admin/index/nationality') }}">
                             <i class="icon-flag menu-icon"></i>
                             <span class="menu-title">Nationality </span>
                         </a>
                     </li>
+                 
 
 
                 </ul>

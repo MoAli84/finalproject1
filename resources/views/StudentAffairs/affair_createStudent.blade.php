@@ -188,39 +188,37 @@
                                         </div>
                                     @endif
 
-                                    <h4 class="card-title">Basic Data</h4>
-                                    <!-- <p class="card-description">
-                      Basic form layout
-                    </p> -->
+                                    <h3 >Basic Data</h3><br>
+                           
                                     <form class="forms-sample" action="{{ url('affair/store') }}" method="post">
                                         @csrf
                                         {{-- @method('post') --}}
                                         <div class="form-group" style="padding-right: .5em;">
-                                            <label for="exampleInputName"><b>Name</b> </label>
+                                            <label for="exampleInputName"><b>Full Name</b> </label>
                                             <br>
-                                            <input type="text" name="fname" value="{{ old('fname') }}" style="width: 22%; overflow: visible; border: 1px solid #CED4DA;
-                           font-weight: 400;
-                           font-size: 0.92rem;width: 16%;
-                           border-radius: 4px ; padding: 10px;" placeholder="First Name" />
+                                                <input type="text" name="fname" value="{{ old('fname') }}" style="width: 22%; overflow: visible; border: 1px solid #CED4DA;
+                                                        font-weight: 400;
+                                                        font-size: 0.92rem;width: 16%;
+                                                        border-radius: 4px ; padding: 10px;" placeholder="first name" />
                                             <input type="text" name="mname" value="{{ old('mname') }}" style="width: 22%;overflow: visible; border: 1px solid #CED4DA;
-                           font-weight: 400;
-                           font-size: 0.92rem;width: 16%;
-                           border-radius: 4px ;  padding: 10px;" placeholder="Middle Name" />
+                                                        font-weight: 400;
+                                                        font-size: 0.92rem;width: 16%;
+                                                        border-radius: 4px ;  padding: 10px;" placeholder="middle name" />
                                             <input type="text" name="lname" value="{{ old('lname') }}" style="width: 22%;overflow: visible; border: 1px solid #CED4DA;
-                           font-weight: 400;
-                           font-size: 0.92rem;width: 16%;
-                           border-radius: 4px ;  padding: 10px;" placeholder="Last Name" />
+                                                        font-weight: 400;
+                                                        font-size: 0.92rem;width: 16%;
+                                                        border-radius: 4px ;  padding: 10px;" placeholder="last name" />
                                             <input type="text" name="surname" value="{{ old('surname') }}" style="width: 22%;overflow: visible; border: 1px solid #CED4DA;
-                           font-weight: 400;
-                           font-size: 0.92rem;width: 16%;
-                           border-radius: 4px ;  padding: 10px;" placeholder="SurName" />
+                                                        font-weight: 400;
+                                                        font-size: 0.92rem;width: 16%;
+                                                        border-radius: 4px ;  padding: 10px;" placeholder="surname" />
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputSsn"><b>Ssn</b></label>
-                                            <input type="text"  pattern="^([1-9]{1})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})[0-9]{3}([0-9]{1})[0-9]{1}$" title="Enter National ID correctlly"
+                                            <label for="exampleInputSsn"><b>Student Ssn</b></label>
+                                            <input type="number"  pattern="^([1-9]{1})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})[0-9]{3}([0-9]{1})[0-9]{1}$" title="Enter National ID correctlly"
                                                class="form-control" name="ssn"
                                                 value="{{ old('ssn') }}" id="exampleInputSsn"
-                                                placeholder="Ssn" style="width: 50%;">
+                                                placeholder="national_id" style="width: 50%;">
                                         </div>
 
                                         <div class="form-group" style="padding-right: .5em;">
@@ -231,16 +229,16 @@
                                                       font-weight: 400;
                                                       font-size: 0.92rem;width: 18%;
                                                       border-radius: 4px ; padding: 10px;"
-                                                placeholder=" Governorate " />
+                                                placeholder=" governorate " />
                                             <input type="text" name="city" value="{{ old('city') }}" style="width: 30%;overflow: visible; border: 1px solid #CED4DA;
                                                             font-weight: 400;
                                                             font-size: 0.92rem;width: 18%;
-                                                            border-radius: 4px ;  padding: 10px;" placeholder="City" />
+                                                            border-radius: 4px ;  padding: 10px;" placeholder="city" />
                                             <input type="text" name="village" value="{{ old('village') }}" style="width: 30%;overflow: visible; border: 1px solid #CED4DA;
                                                                 font-weight: 400;
                                                                 font-size: 0.92rem;width: 18%;
                                                                 border-radius: 4px ;  padding: 10px;"
-                                                placeholder="Village" />
+                                                placeholder="village" />
                                         </div>
 
 
@@ -260,7 +258,7 @@
                                             <label for="exampleInputBirth1"><b>Birth Date</b></label>
                                             <input type="date" class="form-control" id="exampleInputBirthdate"
                                                 name="birthdate" value="{{ old('birthdate') }}"
-                                                placeholder="Birthdate" style="width: 50%;">
+                                                placeholder="birthdate" style="width: 50%;">
                                         </div>
 
                                         <div class="form-group">
@@ -288,21 +286,27 @@
 
 
                                         <div class="form-group">
-                                            <label for="exampleSelectStage"><b>Educational Stage</b></label>
-                                            <select class="form-control" id="exampleSelectStage" style="width: 50%;">
-                                                <option>Primary</option>
-                                                <option>Middle</option>
-                                                <option>secondary</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputAcadmic"><b>Acadmic Level</b> </label>
-                                            <input type="text" class="form-control" id="xampleInputAcadmic"
-                                                placeholder="Acadmic Level" style="width: 50%;">
-                                        </div><br>
+                                            <label for="exampleSelectSlevel">Academic Level</label>
+                                              <select class="form-control" name="sublev_id" id="exampleSelectSlevel" style="width: 50%;">
+                                               @foreach ($sublev as $sublev)
+                                                  <option value="{{ $sublev->id }}">{{ $sublev->sublev ."  ". $sublev->level }}</option> 
+                                               @endforeach 
+                                              </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleSelectSlevel">Term</label>
+                                                  <select class="form-control" name= "term_id" id="exampleSelectSlevel" style="width: 50%;">
+                                                   @foreach ($ter as $ter)
+                                                      <option value="{{ $ter->id }}">{{ $ter->term_name  }}</option> 
+                                                   @endforeach 
+                                                  </select>
+                                                </div>
+
+                                       <br>
                                         <hr>
 
-                                        <h4>family data</h4>
+                                        <h3>family data</h3>
                                         <br>
 
 
@@ -311,7 +315,7 @@
                                                 class="col-sm-2 col-form-label"><b>Father_Ssn</b></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name='father_ssn' value="{{ old('father_ssn') }}"
-                                                    id="exampleInputFather_ssn" placeholder="Father_ssn"
+                                                    id="exampleInputFather_ssn" pattern="^([1-9]{1})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})[0-9]{3}([0-9]{1})[0-9]{1}$" title="Enter National ID correctlly" placeholder="father's ssn"
                                                     style="width: 50%;">
                                             </div>
                                         </div>
@@ -320,8 +324,18 @@
                                                 class="col-sm-2 col-form-label"><b>Father_Job</b></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name='father_job' value="{{ old('father_job') }}"
-                                                    id="exampleInputMother_Job" placeholder="Father's Job"
+                                                    id="exampleInputMother_Job" placeholder="father's job"
                                                     style="width: 50%;">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="exampleInputphone"
+                                                class="col-sm-2 col-form-label"><b>Father_Phone</b></label>
+                                            <div class="col-sm-9">
+                                                <input type="tel" class="form-control" name='phone1' value="{{ old('phone1') }}" 
+                                                   pattern="^01[0125][0-9]{8}$" title="Enter valid Phone nunber" maxlength="11" id="exampleInputphone" placeholder="father phone" style="width: 50%;">
                                             </div>
                                         </div>
 
@@ -331,7 +345,7 @@
                                                 class="col-sm-2 col-form-label"><b>Mother_Name</b></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name='mother_name' value="{{ old('mother_name') }}" 
-                                                    id="exampleInputName2" placeholder="Mother's name"
+                                                    id="exampleInputName2" placeholder="mother's name"
                                                     style="width: 50%;">
                                             </div>
                                         </div>
@@ -341,7 +355,7 @@
                                                 class="col-sm-2 col-form-label"><b>Mother_Ssn</b></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name='mother_ssn' value="{{ old('mother_ssn') }}" 
-                                                    id="exampleInputMother" placeholder="Mother's ssn"
+                                                    id="exampleInputMother" placeholder="mother's ssn"
                                                     style="width: 50%;">
                                             </div>
                                         </div>
@@ -351,26 +365,19 @@
                                                 class="col-sm-2 col-form-label"><b>Mother_Job</b></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name='mother_job' value="{{ old('mother_job') }}" 
-                                                    id="exampleInputMother1" placeholder="Mother's Job"
+                                                    id="exampleInputMother1" placeholder="mother's Job"
                                                     style="width: 50%;">
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
-                                            <label for="exampleInputphone"
-                                                class="col-sm-2 col-form-label"><b>Phone 1</b></label>
-                                            <div class="col-sm-9">
-                                                <input type="tel" class="form-control" name='phone1' value="{{ old('phone1') }}" 
-                                                   pattern="^01[0125][0-9]{8}$" title="Enter valid Phone nunber" maxlength="11" id="exampleInputphone" placeholder="Phone" style="width: 50%;">
-                                            </div>
-                                        </div>
+                                    
 
                                         <div class="form-group row">
                                             <label for="exampleInputMothers's presence"
-                                                class="col-sm-2 col-form-label"><b>Phone 2 </b></label>
+                                                class="col-sm-2 col-form-label"><b>Mother Phone </b></label>
                                             <div class="col-sm-9">
                                                 <input type="tel" class="form-control" name='phone2' value="{{ old('phone2') }}" 
-                                                    id="exampleInputMothers's presence" placeholder="Anther Phone"pattern="^01[0125][0-9]{8}$" title="Enter valid Phone nunber" maxlength="11"
+                                                    id="exampleInputMothers's presence" placeholder="mother's phone"pattern="^01[0125][0-9]{8}$" title="Enter valid Phone nunber" maxlength="11"
                                                     style="width: 50%;">
                                             </div>
                                         </div>

@@ -309,19 +309,38 @@
                                             </select>
                                         </div>
 
+                                     
                                         <div class="form-group">
-                                            <label for="exampleSelectStage">Educational Stage</label>
-                                            <select class="form-control" id="exampleSelectStage" style="width: 50%;">
-                                                <option>Primary</option>
-                                                <option>Middle</option>
-                                                <option>secondary</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputAcadmic">Acadmic Level </label>
-                                            <input type="text" class="form-control" id="xampleInputAcadmic"
-                                                placeholder="Acadmic Level" style="width: 50%;">
-                                        </div><br>
+                                            <label for="exampleSelectSlevel">Academic Level</label>
+                                              <select class="form-control" name= sublev_id id="exampleSelectSlevel" style="width: 50%;">
+                                                
+                                               @foreach ($sub as $s)
+
+                                                  <option value="{{ $s->id }}" @if ($data->sublev_id == $s->id)
+                                                     selected   @endif>
+                                                    {{ $s->sublev ."  ". $s->level }}</option> 
+
+                                               @endforeach 
+                                              </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleInputElevel">Term</label>
+                                                    <select class="form-control" name="term_id" id="exampleInputElevel"  style="width: 50%;">
+                                                        @foreach ($ter as$termm)
+                                                             <option value="{{ $termm->id }}"
+                                                                @if ($data->term_id == $termm->id) selected @endif>
+                                                                {{ $termm->term_name }}</option>
+                                                        @endforeach
+                                                     
+                                                    </select>
+                                                  </div>
+
+
+                                    
+                                    
+                                    
+                                        <br>
                                         <hr>
                                         <h3>
                                             <h4>family data</h4>

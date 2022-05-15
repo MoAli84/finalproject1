@@ -9,6 +9,9 @@ use App\Models\Religion;
 use App\Models\StdAddress;
 use App\Models\StdFamily;
 use App\Models\StdHealth;
+use App\Models\Level;
+use App\Models\Sublevel;
+use App\Models\Term;
 class studentAffairsController extends Controller
 {
  
@@ -39,9 +42,15 @@ class studentAffairsController extends Controller
         $address=StdAddress::get();
         $family=StdAddress::get();
         $disease=StdHealth::get();
+        $ter = Term::where('id',1)->get();
+        $lev = Level::get();
+        
+        $sublev =Sublevel::join('acadmic_level','acadmic_level.id','=','sublevel.level_id')
+        ->select('sublevel.*','acadmic_level.level')->get();
+       
         
        // dd($religion);
-        return view('StudentAffairs.affair_createStudent',['sex'=>$sex ,'from'=>$from ,'religion'=>$religion]);
+        return view('StudentAffairs.affair_createStudent',['sex'=>$sex ,'from'=>$from ,'religion'=>$religion ,'ter'=>$ter ,'sublev'=>$sublev]);
     }
 
 
@@ -58,6 +67,8 @@ class studentAffairsController extends Controller
            'gender_id'   =>'required|numeric',
            'nationl_id'  =>'required|numeric',
            'religion_id' =>'required|numeric',
+           'sublev_id'   =>'required|numeric',
+           'term_id'     =>'required|numeric',
             'governorate'=>'required|min:4',
             'city'       =>'required|min:3',
             'village'    =>'required|min:3',
@@ -116,6 +127,8 @@ class studentAffairsController extends Controller
       $data = Affairs::join('gender','students.gender_id','=','gender.id')
       ->join('nationality','students.nationl_id','=','nationality.id')
       ->join('religion','students.religion_id','=','religion.id')
+      ->join('sublevel','sublevel.id','=','students.sublev_id')
+      ->join('acadmic_level','acadmic_level.id','=','sublevel.level_id')
       ->leftjoin('student_address','students.id','=','student_address.student_id')
       ->leftjoin('student_family','students.id','=','student_family.student_id')
       ->leftjoin('student_disease','students.id','=','student_disease.student_id')
@@ -123,6 +136,8 @@ class studentAffairsController extends Controller
                 'gender.sex',
                 'nationality.name',
                 'religion.relig_name',
+                'sublevel.sublev',
+                'acadmic_level.level',
                 'student_address.governorate','student_address.city','student_address.village',
                 'student_family.father_ssn','student_family.father_job','student_family.mother_name','student_family.mother_ssn','student_family.mother_job','student_family.phone1' ,'student_family.phone2',
                 'student_disease.have_chronic','student_disease.disease_name','student_disease.disease_degree','student_disease.height','student_disease.weight','student_disease.extra_data')->get()->where('id','=',$id);
@@ -140,8 +155,25 @@ class studentAffairsController extends Controller
         $addr=StdAddress::where('student_id','=',$id)->get();
         $family=StdFamily::where('student_id','=',$id)->get();
         $disease=StdHealth::where('student_id','=',$id)->get();
+        $lev=Level::get();
+        $sub =Sublevel::join('acadmic_level','acadmic_level.id','=','sublevel.level_id')
+        ->select('sublevel.*','acadmic_level.level')->get();
+        $ter = Term::where('id',1)->get();
+      
       // dd($disease);
-        return view('StudentAffairs.affair_editStudent',['data'=>$data,'sex'=>$sex , 'from'=>$from ,'religion'=>$religion ,'addr'=>$addr , 'family'=>$family ,'disease'=>$disease]);
+        return view('StudentAffairs.affair_editStudent',[
+          'data'=>$data,
+          'sex'=>$sex ,
+          'from'=>$from ,
+          'religion'=>$religion ,
+          'addr'=>$addr ,
+          'family'=>$family,
+          'disease'=>$disease,
+          'lev'=>$lev,
+          'sub'=>$sub,
+          'ter'=>$ter
+        
+        ]);
     }
 
     public function update(Request $request)
@@ -156,6 +188,8 @@ class studentAffairsController extends Controller
         'gender_id'  =>'required|numeric',
         'nationl_id' =>'required|numeric',
         'religion_id'=>'required|numeric',
+        'sublev_id'   =>'required|numeric',
+        'term_id'     =>'required|numeric',
 
         'governorate'=>'required|min:4',
         'city'       =>'required|min:3',

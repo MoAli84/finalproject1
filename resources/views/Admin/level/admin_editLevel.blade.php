@@ -59,11 +59,7 @@
                             </a>
                         </div>
                     </li>
-                    <!-- <li class="nav-item nav-settings d-none d-lg-flex">
-            <a class="nav-link" href="#">
-              <i class="icon-ellipsis"></i>
-            </a>
-          </li> -->
+              
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
                     data-toggle="offcanvas">
@@ -96,22 +92,7 @@
                     </div>
                 </div>
             </div>
-            {{-- <div id="right-sidebar" class="settings-panel">
-                <i class="settings-close ti-close"></i>
-                <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab"
-                            aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
-                    </li>
-
-                </ul>
-                <div class="tab-content" id="setting-content">
-           
-                    <!-- chat tab ends -->
-                </div>
-            </div> --}}
-            <!-- partial -->
-            <!-- partial:partials/_sidebar.html -->
+          
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
@@ -129,24 +110,43 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="material-t.html">
-                            <i class="icon-book menu-icon"></i>
-                            <span class="menu-title">Material</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="year-t.html">
+                        <a class="nav-link" href="{{ url('admin/index/year') }}">
                             <i class="icon-circle-plus menu-icon"></i>
-                            <span class="menu-title">Add Year </span>
+                            <span class="menu-title">Year </span>
 
                         </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="nationality-t.html">
-                            <i class="icon-flag menu-icon"></i>
-                            <span class="menu-title">Add Nationality </span>
+                        <a class="nav-link" href="{{ url('admin/index/level') }}">
+                          <i class="icon-flag menu-icon"></i>
+                          <span class="menu-title">Level </span>
+                        </a>
+                      </li>
+            
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url('admin/index/sublevel') }}">
+                          <i class="icon-flag menu-icon"></i>
+                          <span class="menu-title">Sublevel </span>
+                        </a>
+                      </li>
+
+                     
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('admin/index/course') }}">
+                            <i class="icon-book menu-icon"></i>
+                            <span class="menu-title">Courses</span>
                         </a>
                     </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('admin/index/nationality') }}">
+                            <i class="icon-flag menu-icon"></i>
+                            <span class="menu-title">Nationality </span>
+                        </a>
+                    </li>
+                 
 
 
                 </ul>
