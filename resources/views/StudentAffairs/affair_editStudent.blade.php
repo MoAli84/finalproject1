@@ -28,9 +28,10 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo mr-5" href="{{ url('affair/index') }}"><img src="images/track (1).svg"
-                        class="mr-2" alt="logo" /></a>
-                <a class="navbar-brand brand-logo-mini" href="{{ url('affair/index') }}"><img src="images/logo.svg" alt="logo" /></a>
+                <a class="navbar-brand brand-logo mr-5" href="{{ url('affair/index') }}"><img
+                        src="images/track (1).svg" class="mr-2" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="{{ url('affair/index') }}"><img src="images/logo.svg"
+                        alt="logo" /></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                 <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -110,50 +111,70 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#primary" aria-expanded="false"
                             aria-controls="primary">
-                            <i class="icon-head menu-icon"></i>
+                            <i class="icon-book menu-icon"></i>
                             <span class="menu-title">primary</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="primary">
+
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">1</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">2</a></li>
+
+                                <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                                <li class="nav-item"> <a class="nav-link"> 2 </a>
+                                </li>
                                 <li class="nav-item"> <a class="nav-link">3</a></li>
                                 <li class="nav-item"> <a class="nav-link">4</a></li>
                                 <li class="nav-item"> <a class="nav-link">5</a></li>
                                 <li class="nav-item"> <a class="nav-link">6</a></li>
                             </ul>
                         </div>
+
+
+
                     </li>
+                    <!-- ************************************************************************** -->
+                    <!-- **************************************************************************************** -->
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#middle" aria-expanded="false"
                             aria-controls="middle">
-                            <i class="icon-head menu-icon"></i>
+                            <i class="icon-book menu-icon"></i>
                             <span class="menu-title">middle</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="middle">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="levels.html">7</a></li>
-                                <li class="nav-item"><a class="nav-link">8</a></li>
-                                <li class="nav-item"><a class="nav-link">9</a></li>
+
+                                <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                                <li class="nav-item"> <a class="nav-link"> 2 </a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link">3</a></li>
+
                             </ul>
                         </div>
+
                     </li>
+                    <!-- *************************************************************************** -->
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#secondary" aria-expanded="false"
                             aria-controls="secondary">
-                            <i class="icon-head menu-icon"></i>
+                            <i class="icon-book menu-icon"></i>
                             <span class="menu-title">secondary</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="secondary">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link">10</a></li>
-                                <li class="nav-item"> <a class="nav-link">11</a></li>
-                                <li class="nav-item"> <a class="nav-link">12</a></li>
+
+                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
+
                             </ul>
                         </div>
+
                     </li>
 
                     <li class="nav-item">
@@ -162,7 +183,6 @@
                             <span class="menu-title">Add Student</span>
                         </a>
                     </li>
-
 
                 </ul>
             </nav>
@@ -209,8 +229,8 @@
 
                                         <input type="hidden" name="id" value="{{ $data->id }}">
 
-                                        <div class="form-group" style="padding-right: .5em;">
-                                            <label for="exampleInputName">Name </label>
+                                        <div class="form-group row" style="padding-right: .5em;">
+                                            <label for="exampleInputName" class="col-sm-2 col-form-label">Name </label>
                                             <br>
                                             <input type="text" name="fname" value="{{ $data->fname }}" style="width: 22%; overflow: visible; border: 1px solid #CED4DA;
                            font-weight: 400;
@@ -229,41 +249,55 @@
                            font-size: 0.92rem;width: 16%;
                            border-radius: 4px ;  padding: 10px;" placeholder="SurName" />
                                             {{-- value="{{ $addr->governorate }}"
-                           value="{{ $addr->city  }}" 
+                           value="{{ $addr->city  }}"
                            value="{{ $addr->village  }}" --}}
                                         </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputSsn">Ssn</label>
+                                        <div class="form-group row">
+                                            <label for="exampleInputSsn" class="col-sm-2 col-form-label">Ssn</label>
                                             <input type="number" class="form-control" name="ssn"
                                                 value="{{ $data->ssn }}" id="exampleInputSsn" placeholder="Ssn"
                                                 style="width: 50%;" minlength="13" maxlength="15">
                                         </div>
-                                        <div class="form-group" style="padding-right: .5em;">
-                                            <label for="exampleInputAddress"> Address</label>
-                                            <br>
-                                            <input type="text" name="governorate"
-                                                @foreach ($addr as $where) value="{{ $where->governorate }}" @endforeach
-                                                style="width: 30%; overflow: visible; border: 1px solid #CED4DA;
-                           font-weight: 400;
-                           font-size: 0.92rem;width: 18%;
-                           border-radius: 4px ; padding: 10px;" placeholder=" Governorate " />
-                                            <input type="text" name="city"
-                                                @foreach ($addr as $where) value="{{ $where->city }}" @endforeach
-                                                style="width: 30%;overflow: visible; border: 1px solid #CED4DA;
-                           font-weight: 400;
-                           font-size: 0.92rem;width: 18%;
-                           border-radius: 4px ;  padding: 10px;" placeholder="City" />
-                                            <input type="text" name="village"
-                                                @foreach ($addr as $where) value="{{ $where->village }}" @endforeach
-                                                style="width: 30%;overflow: visible; border: 1px solid #CED4DA;
-                           font-weight: 400;
-                           font-size: 0.92rem;width: 18%;
-                           border-radius: 4px ;  padding: 10px;" placeholder="Village" />
+
+                                        <div class="form-group row">
+                                            <label for="exampleSelectReligion" class="col-sm-2 col-form-label">Governorate</label>
+                                            <select class="form-control" name="governorate_id" style="width: 50%;">
+                                                @foreach ($govern as $info)
+                                                    <option value="{{ $info->id }}"
+                                                        @if ($data->governorate_id == $info->id) selected @endif>
+                                                        {{ $info->gov_name }}</option>
+                                                @endforeach
+
+
+                                            </select>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="exampleSelectReligion" class="col-sm-2 col-form-label">CIty</label>
+                                            <select class="form-control" name="city_id" style="width: 50%;">
+                                                @foreach ($city as $info)
+                                                    <option value="{{ $info->id }}"
+                                                        @if ($data->city_id == $info->id) selected @endif>
+                                                        {{ $info->city_name }}</option>
+                                                @endforeach
+
+
+                                            </select>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="exampleSelectReligion" class="col-sm-2 col-form-label">District</label>
+                                            <select class="form-control" name="district_id" style="width: 50%;">
+                                                @foreach ($district as $info)
+                                                    <option value="{{ $info->id }}"
+                                                        @if ($data->district_id == $info->id) selected @endif>
+                                                        {{ $info->district_name }}</option>
+                                                @endforeach
+
+
+                                            </select>
                                         </div>
 
-
-                                        <div class="form-group">
-                                            <label for="exampleSelectGender">Gender</label>
+                                        <div class="form-group row">
+                                            <label for="exampleSelectGender" class="col-sm-2 col-form-label">Gender</label>
                                             <select class="form-control" name="gender_id" style="width: 50%;">
                                                 @foreach ($sex as $born)
                                                     <option value="{{ $born->id }}"
@@ -275,29 +309,27 @@
                                             </select>
                                         </div>
 
-                                        <div class="form-group">
-                                            <label for="exampleInputBirth1">Birth Date</label>
+                                        <div class="form-group row">
+                                            <label for="exampleInputBirth1" class="col-sm-2 col-form-label">Birth Date</label>
                                             <input type="date" class="form-control" id="exampleInputBirthdate"
                                                 name="birthdate" value="{{ $data->birthdate }}"
                                                 placeholder="Birthdate" style="width: 50%;">
                                         </div>
 
-                                        <div class="form-group">
-                                            <label for="exampleSelectGender">Nationality</label>
+                                        <div class="form-group row">
+                                            <label for="exampleSelectGender" class="col-sm-2 col-form-label">Nationality</label>
                                             <select class="form-control" name="nationl_id" style="width: 50%;">
                                                 @foreach ($from as $where)
                                                     <option value="{{ $where->id }}"
                                                         @if ($data->nationl_id == $where->id) selected @endif>
-                                                        {{ $where->name }}</option>
+                                                        {{ $where->nation_name }}</option>
                                                 @endforeach
-
-
                                             </select>
                                         </div>
 
 
-                                        <div class="form-group">
-                                            <label for="exampleSelectReligion">Religion</label>
+                                        <div class="form-group row">
+                                            <label for="exampleSelectReligion" class="col-sm-2 col-form-label">Religion</label>
                                             <select class="form-control" name="religion_id" style="width: 50%;">
                                                 @foreach ($religion as $info)
                                                     <option value="{{ $info->id }}"
@@ -309,37 +341,37 @@
                                             </select>
                                         </div>
 
-                                     
-                                        <div class="form-group">
-                                            <label for="exampleSelectSlevel">Academic Level</label>
-                                              <select class="form-control" name= sublev_id id="exampleSelectSlevel" style="width: 50%;">
-                                                
-                                               @foreach ($sub as $s)
 
-                                                  <option value="{{ $s->id }}" @if ($data->sublev_id == $s->id)
-                                                     selected   @endif>
-                                                    {{ $s->sublev ."  ". $s->level }}</option> 
+                                        <div class="form-group row">
+                                            <label for="exampleSelectSlevel" class="col-sm-2 col-form-label">Academic Level</label>
+                                            <select class="form-control" name=sublev_id id="exampleSelectSlevel"
+                                                style="width: 50%;">
 
-                                               @endforeach 
-                                              </select>
-                                            </div>
+                                                @foreach ($sub as $s)
+                                                    <option value="{{ $s->id }}"
+                                                        @if ($data->sublev_id == $s->id) selected @endif>
+                                                        {{ $s->sublev . '  ' . $s->level }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
 
-                                            <div class="form-group">
-                                                <label for="exampleInputElevel">Term</label>
-                                                    <select class="form-control" name="term_id" id="exampleInputElevel"  style="width: 50%;">
-                                                        @foreach ($ter as$termm)
-                                                             <option value="{{ $termm->id }}"
-                                                                @if ($data->term_id == $termm->id) selected @endif>
-                                                                {{ $termm->term_name }}</option>
-                                                        @endforeach
-                                                     
-                                                    </select>
-                                                  </div>
+                                        <div class="form-group row">
+                                            <label for="exampleInputElevel" class="col-sm-2 col-form-label">Term</label>
+                                            <select class="form-control" name="term_id" id="exampleInputElevel"
+                                                style="width: 50%;">
+                                                @foreach ($ter as $termm)
+                                                    <option value="{{ $termm->id }}"
+                                                        @if ($data->term_id == $termm->id) selected @endif>
+                                                        {{ $termm->term_name }}</option>
+                                                @endforeach
+
+                                            </select>
+                                        </div>
 
 
-                                    
-                                    
-                                    
+
+
+
                                         <br>
                                         <hr>
                                         <h3>
@@ -348,157 +380,119 @@
 
 
                                             <div class="form-group row">
-                                                <label for="exampleInputFather_ssn"
-                                                    class="col-sm-2 col-form-label"><b>Father_Ssn</b></label>
+                                                <label for="exampleInputfssn" class="col-sm-2 col-form-label">Father Ssn</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name='father_ssn'
-                                                        @foreach ($family as $fam) value="{{ $fam->father_ssn }}" @endforeach
-                                                        id="exampleInputFather_ssn" placeholder="Father_ssn"
-                                                        style="width: 50%;">
-                                                </div>
+                                                <input type="number" class="form-control" name="father_ssn"
+                                                    value="{{ $data->father_ssn }}" id="exampleInputfssn"
+                                                    placeholder="father ssn" style="width: 50%;">
+                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label for="exampleInputMother_Job"
-                                                    class="col-sm-2 col-form-label"><b>Father_Job</b></label>
+                                                <label for="exampleInputfjob" class="col-sm-2 col-form-label">Father Job</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name='father_job'
-                                                        @foreach ($family as $fam) value="{{ $fam->father_job }}" @endforeach
-                                                        id="exampleInputMother_Job" placeholder="Father's Job"
-                                                        style="width: 50%;">
-                                                </div>
+                                                <input type="text" class="form-control" name="father_job"
+                                                    value="{{ $data->father_job }}" id="exampleInputfjob"
+                                                    placeholder="father job" style="width: 50%;">
+                                                 </div>
                                             </div>
-
-
                                             <div class="form-group row">
-                                                <label for="exampleInputName2"
-                                                    class="col-sm-2 col-form-label"><b>Mother_Name</b></label>
+                                                <label for="exampleInputfphone" class="col-sm-2 col-form-label">Father Phone</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name='mother_name'
-                                                        @foreach ($family as $fam) value="{{ $fam->mother_name }}" @endforeach
-                                                        id="exampleInputName2" placeholder="Mother's name"
-                                                        style="width: 50%;">
-                                                </div>
+                                                <input type="number" class="form-control" name="father_phone"
+                                                    value="{{ $data->father_phone }}" id="exampleInputfphone"
+                                                    placeholder="father phone" style="width: 50%;">
+                                                 </div>
                                             </div>
-
                                             <div class="form-group row">
-                                                <label for="exampleInputMother"
-                                                    class="col-sm-2 col-form-label"><b>Mother_Ssn</b></label>
+                                                <label for="exampleInputmname" class="col-sm-2 col-form-label">Mother Name</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name='mother_ssn'
-                                                        @foreach ($family as $fam) value="{{ $fam->mother_ssn }}" @endforeach
-                                                        id="exampleInputMother" placeholder="Mother's ssn"
-                                                        style="width: 50%;">
-                                                </div>
+                                                <input type="text" class="form-control" name="mother_name"
+                                                    value="{{ $data->mother_name }}" id="exampleInputmname"
+                                                    placeholder="mother name" style="width: 50%;">
+                                                 </div>
                                             </div>
-
                                             <div class="form-group row">
-                                                <label for="exampleInputMother1"
-                                                    class="col-sm-2 col-form-label"><b>Mother_Job</b></label>
+                                                <label for="exampleInputmssn" class="col-sm-2 col-form-label">Mother Ssn</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name='mother_job'
-                                                        @foreach ($family as $fam) value="{{ $fam->mother_job }}" @endforeach
-                                                        id="exampleInputMother1" placeholder="Mother's Job"
-                                                        style="width: 50%;">
-                                                </div>
+                                                <input type="number" class="form-control" name="mother_ssn"
+                                                    value="{{ $data->mother_ssn }}" id="exampleInputmssn"
+                                                    placeholder="mother ssn" style="width: 50%;">
+                                                 </div>
                                             </div>
-
                                             <div class="form-group row">
-                                                <label for="exampleInputphone" class="col-sm-2 col-form-label"><b>Phone
-                                                        1</b></label>
+                                                <label for="exampleInputmjob" class="col-sm-2 col-form-label">Mother Job</label>
                                                 <div class="col-sm-9">
-                                                    <input type="tel" class="form-control" name='phone1'
-                                                        @foreach ($family as $fam) value="{{ '0' . $fam->phone1 }}" @endforeach
-                                                        pattern="^01[0125][0-9]{8}$" title="Enter valid Phone nunber"
-                                                        maxlength="11" id="exampleInputphone" placeholder="Phone"
-                                                        style="width: 50%;">
-                                                </div>
+                                                <input type="text" class="form-control" name="mother_job"
+                                                    value="{{ $data->mother_job }}" id="exampleInputmjob"
+                                                    placeholder="mother job" style="width: 50%;">
+                                                 </div>
                                             </div>
-
                                             <div class="form-group row">
-                                                <label for="exampleInputMothers's presence"
-                                                    class="col-sm-2 col-form-label"><b>Phone 2 </b></label>
+                                                <label for="exampleInputmphone" class="col-sm-2 col-form-label">Mother Phone</label>
                                                 <div class="col-sm-9">
-                                                    <input type="tel" class="form-control" name='phone2'
-                                                        @foreach ($family as $fam) value="{{ '0' . $fam->phone2 }}" @endforeach
-                                                        id="exampleInputMothers's presence" placeholder="Anther Phone"
-                                                        pattern="^01[0125][0-9]{8}$" title="Enter valid Phone nunber"
-                                                        maxlength="11" style="width: 50%;">
-                                                </div>
+
+                                                <input type="number" class="form-control" name="mother_phone"
+                                                    value="{{ $data->mother_phone }}" id="example
+                                                 </div>   Inputmphone"
+                                                    placeholder="mother phone" style="width: 50%;">
                                             </div>
+                                        </div><hr>
 
 
-
-
-
-                                            <hr>
-                                            <h4>Health data</h4>
+                                            <br>
+                                            <h3 style="font-weight: bold; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;color:brown; background-color: #CED4DA; padding: 10px">Health data</h3>
                                             <br>
 
                                             <div class="form-group row">
-                                                <label for="exampleInputchroinc"
-                                                    class="col-sm-2 col-form-label"><b>Have Chroinc</b></label>
+                                                <label for="exampleInputchroinc" class="col-sm-2 col-form-label"><b>Have Chroinc</b></label>
                                                 <div class="col-sm-9">
+                                                    <input type="text" class="form-control" name='chronic' @foreach ($disease as $dis) value=" {{ $dis->chronic }}" @endforeach
+                                                    Pattern = "^(?:Yes|No)$" id="exampleInputchronic" placeholder="Yes / No" style="width: 20%;">
+                                                     <span style="font-family: Times, serif; font: 85;color: red"> * Enter (No) or (Yes) Only</span>
 
-                                                    <input type="text" class="form-control" name='chronic'
-                                                        @foreach ($disease as $dis) value=" {{ $dis->have_chronic }}" @endforeach
-                                                        id="exampleInputchronic" placeholder="Yes / No"
-                                                        style="width: 20%;">
                                                 </div>
                                             </div>
 
-                                            <div class="form-group" style="padding-right: .5em;">
-                                                <label for="exampleInputAddress"><b>Health</b></label>
-                                                <br>
-                                                <input type="text" name="disease_name"
-                                                    @foreach ($disease as $dis) value="{{ $dis->disease_name }}" @endforeach
-                                                    style="width: 30%; overflow: visible; border: 1px solid #CED4DA;
-                                    font-weight: 400;
-                                    font-size: 0.92rem;width: 18%;
-                                    border-radius: 4px ; padding: 10px;" placeholder="Disease Name" />
-                                                <input type="number" name="disease_degree"
-                                                    @foreach ($disease as $dis) value="{{ $dis->disease_degree }}" @endforeach
-                                                    style="width: 30%;overflow: visible; border: 1px solid #CED4DA;
-                                          font-weight: 400;
-                                          font-size: 0.92rem;width: 18%;
-                                          border-radius: 4px ;  padding: 10px;" placeholder="Disease Degree" />
-                                                <span style="font-family: Times, serif; font: 85;color: rgb(187, 111, 111)"> * Enter
-                                                    (No) if you hasn't</span>
-
+                                            <div class="form-group row" >
+                                                <label for="exampleInputAddress" class="col-sm-2 col-form-label"><b>Health</b></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="disease_name"  @foreach ($disease as $dis) value="{{ $dis->disease_name }}" @endforeach
+                                                     class="form-control" style="width: 20%; overflow: visible; border: 1px solid #CED4DA;
+                                                            font-weight: 400;
+                                                            font-size: 0.92rem;
+                                                            border-radius: 4px ; padding: 10px;"
+                                                        placeholder="Disease Name" />
+                                                    <input type="number" name="disease_degree" @foreach ($disease as $dis) value="{{ $dis->disease_degree }}" @endforeach
+                                                    class="form-control" style="width: 20%;overflow: visible; border: 1px solid #CED4DA;
+                                                                    font-weight: 400;
+                                                                    font-size: 0.92rem;
+                                                                    border-radius: 4px ;  padding: 10px;" placeholder="Disease Degree" />
+                                                                    <span style="font-family: Times, serif; font: 85;color: red">* Enter (No) if you hasn't</span>
+                                                </div>
                                             </div>
 
-                                            <div class="form-group" style="padding-right: .5em;">
-                                                <label for="exampleInputAddress"><b>Body</b></label>
-                                                <br>
-                                                <input type="number" name="height" 
-                                                             @foreach ( $disease as $dis )
-                                                            value="{{ $dis->height }}"
-                                                           @endforeach 
-                                                 style="width: 30%; overflow: visible; border: 1px solid #CED4DA;
-                                    font-weight: 400;
-                                    font-size: 0.92rem;width: 18%;
-                                    border-radius: 4px ; padding: 10px;" placeholder="Height :100" />
-                                                <input type="number" name="weight" 
-                                                    @foreach ( $disease as $dis )
-                                                    value="{{ $dis->weight }}"
-                                                  @endforeach 
-                                                style="width: 30%;overflow: visible; border: 1px solid #CED4DA;
-                                          font-weight: 400;
-                                          font-size: 0.92rem;width: 18%;
-                                          border-radius: 4px ;  padding: 10px;" placeholder="Weight : cm" />
-
+                                            <div class="form-group row" >
+                                                <label for="exampleInputAddress" class="col-sm-2 col-form-label"><b>Body</b></label>
+                                                <div class="col-sm-9">
+                                                <input type="number" name="height"  @foreach ($disease as $dis) value="{{ $dis->height }}" @endforeach class="form-control"
+                                                    style=" overflow: visible; border: 1px solid #CED4DA;
+                                                          font-weight: 400;
+                                                          font-size: 0.92rem;width: 19%;
+                                                          border-radius: 4px ; padding: 10px;"
+                                                    placeholder="Height :100" />
+                                                <input type="number" name="weight"  @foreach ($disease as $dis) value="{{ $dis->weight }}" @endforeach class="form-control"
+                                                    style="overflow: visible; border: 1px solid #CED4DA;
+                                                                font-weight: 400;
+                                                                font-size: 0.92rem;width: 19%;
+                                                                border-radius: 4px ;  padding: 10px;" placeholder="Weight : cm" />
+                                                </div>
                                             </div>
 
                                             <div class="form-group row">
-                                                <label for="exampleInputchroinc"
-                                                    class="col-sm-2 col-form-label"><b>Extra Data of charactristic
-                                                    </b></label>
+                                                <label for="exampleInputchroinc" class="col-sm-2 col-form-label"><b>Extra Data of charactristic </b></label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name='extra_data'
-                                                    @foreach ( $disease as $dis )
-                                                    value="{{ $dis->extra_data }}"
-                                                  @endforeach 
-                                                    id="exampleInputchroinc"
-                                                        placeholder="Extra Data" style="width: 50%; height: 100%;">
+                                                    <input type="text" class="form-control" name='extra_data' @foreach ($disease as $dis) value="{{ $dis->extra_data }}" @endforeach
+                                                       id="exampleInputchroinc" placeholder="Extra Data" style="width: 50%; ">
                                                 </div>
                                             </div>
 

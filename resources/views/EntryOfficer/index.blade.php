@@ -158,7 +158,7 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="indexx.html">
+                        <a class="nav-link" href="{{ url('affair/index') }}">
                             <i class="icon-grid menu-icon"></i>
                             <span class="menu-title">Dashboard</span>
                         </a>
@@ -170,50 +170,25 @@
                             <span class="menu-title">primary</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="primary">
+
                             <ul class="nav flex-column sub-menu">
 
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#first-term" aria-expanded="false" aria-controls="first-term"> first term
-                                    </a></li>
-
-
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#second-term" aria-expanded="false" aria-controls="second-term"> second
-                                        term </a></li>
-
-
-
-
-                            </ul>
-                        </div>
-                        <div class="collapse" id="first-term">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                            <ul class="nav flex-column sub-menu">
-
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
+                                <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                                <li class="nav-item"> <a class="nav-link"> 2 </a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">4</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">5</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">6</a></li>
+                                <li class="nav-item"> <a class="nav-link">3</a></li>
+                                <li class="nav-item"> <a class="nav-link">4</a></li>
+                                <li class="nav-item"> <a class="nav-link">5</a></li>
+                                <li class="nav-item"> <a class="nav-link">6</a></li>
                             </ul>
                         </div>
-                        <div class="collapse" id="second-term">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                            <ul class="nav flex-column sub-menu">
 
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-                                </li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">4</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">5</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">6</a></li>
-                            </ul>
-                        </div>
+
+
                     </li>
+                    <!-- ************************************************************************** -->
                     <!-- **************************************************************************************** -->
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#middle" aria-expanded="false"
@@ -222,48 +197,20 @@
                             <span class="menu-title">middle</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="middle">
                             <ul class="nav flex-column sub-menu">
 
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#f-term" aria-expanded="false" aria-controls="f-term"> first term </a>
+                                <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                                <li class="nav-item"> <a class="nav-link"> 2 </a>
                                 </li>
-
-
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#s-term" aria-expanded="false" aria-controls="s-term"> second term </a>
-                                </li>
-
-
-
-
-                            </ul>
-                        </div>
-                        <div class="collapse" id="f-term">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                            <ul class="nav flex-column sub-menu">
-
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-                                </li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-
-                            </ul>
-                        </div>
-
-                        <div class="collapse" id="s-term">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                            <ul class="nav flex-column sub-menu">
-
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-                                </li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
+                                <li class="nav-item"> <a class="nav-link">3</a></li>
 
                             </ul>
                         </div>
 
                     </li>
+                    <!-- *************************************************************************** -->
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#secondary" aria-expanded="false"
                             aria-controls="secondary">
@@ -271,25 +218,10 @@
                             <span class="menu-title">secondary</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="secondary">
                             <ul class="nav flex-column sub-menu">
 
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#f-t" aria-expanded="false" aria-controls="f-t"> first term </a></li>
-
-
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#s-t" aria-expanded="false" aria-controls="s-t"> second term </a></li>
-
-
-
-
-                            </ul>
-                        </div>
-                        <div class="collapse" id="f-t">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                            <ul class="nav flex-column sub-menu">
-
                                 <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
                                 <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
                                 </li>
@@ -297,30 +229,15 @@
 
                             </ul>
                         </div>
-                        <div class="collapse" id="s-t">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                            <ul class="nav flex-column sub-menu">
-
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-                                </li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-
-                            </ul>
-                        </div>
-
 
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('add/student') }}">
+                        <a class="nav-link" href="{{ url('affair/create') }}">
                             <i class="icon-plus menu-icon"></i>
                             <span class="menu-title">Add Student</span>
                         </a>
                     </li>
-
-
-
 
                 </ul>
             </nav>

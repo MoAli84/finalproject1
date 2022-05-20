@@ -124,7 +124,7 @@ td div input{
               </a>
             </div>
           </li>
-         
+
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
           <span class="icon-menu"></span>
@@ -152,171 +152,106 @@ td div input{
           </div>
         </div>
       </div>
-     
+
       <!-- partial -->
       <!-- partial:../../partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="entry-officer.html">
-              <i class="icon-grid menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#primary" aria-expanded="false" aria-controls="primary">
-              <i class="icon-book menu-icon"></i>
-              <span class="menu-title">primary</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="primary">
-              <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('affair/index') }}">
+                    <i class="icon-grid menu-icon"></i>
+                    <span class="menu-title">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#primary" aria-expanded="false"
+                    aria-controls="primary">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">primary</span>
+                    <i class="menu-arrow"></i>
+                </a>
 
-                <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#first-term"
-                    aria-expanded="false" aria-controls="first-term"> first term </a></li>
+                <div class="collapse" id="primary">
+
+                    <ul class="nav flex-column sub-menu">
+
+                        <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                        <li class="nav-item"> <a class="nav-link"> 2 </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link">3</a></li>
+                        <li class="nav-item"> <a class="nav-link">4</a></li>
+                        <li class="nav-item"> <a class="nav-link">5</a></li>
+                        <li class="nav-item"> <a class="nav-link">6</a></li>
+                    </ul>
+                </div>
 
 
-                <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#second-term"
-                    aria-expanded="false" aria-controls="second-term"> second term </a></li>
 
+            </li>
+            <!-- ************************************************************************** -->
+            <!-- **************************************************************************************** -->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#middle" aria-expanded="false"
+                    aria-controls="middle">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">middle</span>
+                    <i class="menu-arrow"></i>
+                </a>
 
-               
+                <div class="collapse" id="middle">
+                    <ul class="nav flex-column sub-menu">
 
-              </ul>
-            </div>
-            <div class="collapse" id="first-term">
-              <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-            <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                        <li class="nav-item"> <a class="nav-link"> 2 </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link">3</a></li>
 
-              <li class="nav-item"> <a class="nav-link" href="officer-levels.html"> 1 </a></li>
-              <li class="nav-item"> <a class="nav-link" > 2 </a>
-              </li>
-              <li class="nav-item"> <a class="nav-link" >3</a></li>
-              <li class="nav-item"> <a class="nav-link" >4</a></li>
-              <li class="nav-item"> <a class="nav-link" >5</a></li>
-              <li class="nav-item"> <a class="nav-link" >6</a></li>
-            </ul>
-            </div>
-            <div class="collapse" id="second-term">
-              <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-            <ul class="nav flex-column sub-menu">
+                    </ul>
+                </div>
 
-              <li class="nav-item"> <a class="nav-link" > 1 </a></li>
-              <li class="nav-item"> <a class="nav-link" > 2 </a>
-              </li>
-              <li class="nav-item"> <a class="nav-link" >3</a></li>
-              <li class="nav-item"> <a class="nav-link" >4</a></li>
-              <li class="nav-item"> <a class="nav-link" >5</a></li>
-              <li class="nav-item"> <a class="nav-link">6</a></li>
-            </ul>
-            </div>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#middle" aria-expanded="false" aria-controls="middle">
-                          <i class="icon-book menu-icon"></i>
-                          <span class="menu-title">middle</span>
-                          <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="middle">
-                          <ul class="nav flex-column sub-menu">
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#f-term"
-                                aria-expanded="false" aria-controls="f-term"> first term </a></li>
-            
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#s-term"
-                                aria-expanded="false" aria-controls="s-term"> second term </a></li>
-            
-            
-                           
-            
-                          </ul>
-                        </div>
-                        <div class="collapse" id="f-term">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link"> 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link" > 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link" >3</a></li>
-                          
-                        </ul>
-                        </div>
-            
-                        <div class="collapse" id="s-term">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link" > 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link" > 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link" >3</a></li>
-                          
-                        </ul>
-                        </div>
-            
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#secondary" aria-expanded="false" aria-controls="secondary">
-                          <i class="icon-book menu-icon"></i>
-                          <span class="menu-title">secondary</span>
-                          <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="secondary">
-                          <ul class="nav flex-column sub-menu">
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#f-t"
-                                aria-expanded="false" aria-controls="f-t"> first term </a></li>
-            
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#s-t"
-                                aria-expanded="false" aria-controls="s-t"> second term </a></li>
-            
-            
-                           
-            
-                          </ul>
-                        </div>
-                        <div class="collapse" id="f-t">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link" > 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link" > 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link" >3</a></li>
-                          
-                        </ul>
-                        </div>
-                        <div class="collapse" id="s-t">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link" > 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link" > 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link" >3</a></li>
-                          
-                        </ul>
-                        </div>
-            
-                        
-                      </li>
-         
+            </li>
+            <!-- *************************************************************************** -->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#secondary" aria-expanded="false"
+                    aria-controls="secondary">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">secondary</span>
+                    <i class="menu-arrow"></i>
+                </a>
+
+                <div class="collapse" id="secondary">
+                    <ul class="nav flex-column sub-menu">
+
+                        <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
+
+                    </ul>
+                </div>
+
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('affair/create') }}">
+                    <i class="icon-plus menu-icon"></i>
+                    <span class="menu-title">Add Student</span>
+                </a>
+            </li>
+
         </ul>
-      </nav>
+    </nav>
       <!-- partial -->
-      <div class="main-panel">          
+      <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-            
-           
+
+
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <div class="row">
                     <div class="card-body">
-                        <select id='se' 
+                        <select id='se'
                                 style="margin-top: 20px; padding: 3px;
                                  -webkit-appearance: none;
                                 -moz-appearance: none;
@@ -328,14 +263,14 @@ td div input{
                             transition: border-color .1s ease-in-out,box-shadow .1s ease-in-out;
                             border: 1px solid #ddd;
                             border-radius: 14px;">
-                                
-                                
+
+
                                 <option>Choose Subject</option>
                                 <option value="math1">Math</option>
                                 <option value="arabic1">Arabic</option>
                                 <option value="english1">English</option>
                                 <option value="science1">Science</option>
-                                    
+
                                 </select>
                                 <div class="b1" id="box1" style="margin-top: 25px;" >
                                     <table class="table table-bordered" style="width:100%; height: 60px;" >
@@ -359,9 +294,9 @@ td div input{
                                           <td>4</td>
                                           <td>4</td>
                                           <td>4</td>
-                                          
+
                                         </tr>
-                                        
+
                                       </tbody> -->
                                       <thead>
                                         <tr>
@@ -394,10 +329,10 @@ td div input{
                                           <td>
                                             <div><input type="number"></div>
                                           </td>
-                                          
+
                                         </tr>
                                     </tbody>
-                                     
+
                                     <tbody>
                                         <tr class="tr-inputs">
                                           <td>
@@ -418,16 +353,16 @@ td div input{
                                           <td>
                                             <div><input type="number"></div>
                                           </td>
-                                          
+
                                         </tr>
                                     </tbody>
                                     </table>
-                                    
+
                                   </div>
 
                       </div>
-                     
-                  
+
+
                 </div>
               </div>
             </div>
@@ -451,7 +386,7 @@ td div input{
                       <option value="football1">Football</option>
                       <option value="vollyball1">Vollyball</option>
                       <option value="tennis1">Tennis</option>
-                      
+
                     </select>
                     <div class="b1" id="box2" style="margin-top: 25px;" >
                         <table class="table table-bordered" style="width:100%; height: 60px;" >
@@ -475,18 +410,18 @@ td div input{
                               <td>4</td>
                               <td>4</td>
                               <td>4</td>
-                              
+
                             </tr>
-                            
+
                           </tbody> -->
                           <thead>
                             <tr>
                               <td class="header-label">Students Names</td>
                               <td class="header-label" >Activity</td>
                               <td class="header-label">Performance</td>
-                              
-                              
-                              
+
+
+
                             </tr>
                         </thead>
                         <tbody>
@@ -523,7 +458,7 @@ td div input{
                                          Bad
                                         </label>
                                       </div>
-                                      
+
                                 </div>
                                 <div>
                                     <div class="w-75" >
@@ -531,13 +466,13 @@ td div input{
                                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50"></textarea>
                                       </div>
                                 </div>
-                                
+
                             </td>
-                             
-                              
+
+
                             </tr>
                         </tbody>
-                         
+
                         <tbody>
                             <tr class="tr-inputs">
                               <td>
@@ -572,7 +507,7 @@ td div input{
                                      Bad
                                     </label>
                                   </div>
-                                  
+
                             </div>
                             <div>
                                 <div class="w-75" >
@@ -580,15 +515,15 @@ td div input{
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50"></textarea>
                                   </div>
                             </div>
-                            
+
                         </td>
-                              
-                              
+
+
                             </tr>
                         </tbody>
-                         
+
                         </table>
-                        
+
                       </div>
 
 
@@ -597,11 +532,11 @@ td div input{
             </div>
             <div class="col-md-12  grid-margin stretch-card">
               <div class="card">
-                
-                   <div class="row"> 
+
+                   <div class="row">
                        <div class="card-body">
                           <p>Behavior assessment for each subject</p>
-                    <select id='s' 
+                    <select id='s'
                                 style="margin-top: 20px;
                                 margin: 20px;
                                  padding: 3px;
@@ -615,14 +550,14 @@ td div input{
                             transition: border-color .1s ease-in-out,box-shadow .1s ease-in-out;
                             border: 1px solid #ddd;
                             border-radius: 14px;">
-                                
-                                
+
+
                                 <option>Choose Subject</option>
                                 <option value="math1">Math</option>
                                 <option value="arabic1">Arabic</option>
                                 <option value="english1">English</option>
                                 <option value="science1">Science</option>
-                                    
+
                                 </select>
                                 <div class="b3" id="box3" style="margin-top: 25px;" >
                                     <table  class="table table-bordered" style="width:100%; height: 60px;">
@@ -646,15 +581,15 @@ td div input{
                                           <td>4</td>
                                           <td>4</td>
                                           <td>4</td>
-                                          
+
                                         </tr>
-                                        
+
                                       </tbody> -->
                                       <thead>
                                         <tr>
                                           <td class="header-label">Students Names</td>
                                           <td class="header-label" >Performance</td>
-                                          
+
                                           <!-- <td class="header-label">Year's Grade</td> -->
                                         </tr>
                                     </thead>
@@ -689,7 +624,7 @@ td div input{
                                                      Bad
                                                     </label>
                                                   </div>
-                                                  
+
                                             </div>
                                             <div>
                                                 <div class="w-100" >
@@ -697,15 +632,15 @@ td div input{
                                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50"></textarea>
                                                   </div>
                                             </div>
-                                            
+
                                         </td>
-                                    
-                                          
-                                       
+
+
+
                                         </tr>
                                     </tbody>
-                                    
-                                     
+
+
                                     <tbody>
                                         <tr class="tr-inputs">
                                           <td >
@@ -737,7 +672,7 @@ td div input{
                                                      Bad
                                                     </label>
                                                   </div>
-                                                  
+
                                             </div>
                                             <div>
                                                 <div class="w-100" >
@@ -745,27 +680,27 @@ td div input{
                                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50"></textarea>
                                                   </div>
                                             </div>
-                                            
+
                                         </td>
-                                    
-                                          
-                                       
+
+
+
                                         </tr>
                                     </tbody>
-                                    
+
                                     </table>
-                                    
+
                                   </div>
                    </div>
               </div>
-                  
-               
+
+
               </div>
             </div>
-           
+
           </div>
         </div>
-       
+
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
@@ -794,7 +729,7 @@ td div input{
   <script src="js/todolist.js"></script>
   <script >
        $(document).ready(function(){
-   
+
    $("#box1").hide();
    $("#se").change(function(){
    var n=$(this).children("option:selected").val();
@@ -803,8 +738,8 @@ td div input{
    else
    $("#box1").hide();
    })
-   
-   
+
+
 //    $("#box1").hide();
 //    $("#subject1").change(function(){
 //    var m=$(this).children("option:selected").val();
@@ -813,8 +748,8 @@ td div input{
 //    else
 //    $("#box1").hide();
 //    })
-   
-   
+
+
 //    $("#activity1").change(function(){
 //    var z=$(this).children("option:selected").val();
 //    if(z!='Choose Activity')
@@ -839,11 +774,11 @@ td div input{
    else
    $("#box3").hide();
    })
-   
+
    });
   </script>
 
- 
+
 </body>
 
 </html>

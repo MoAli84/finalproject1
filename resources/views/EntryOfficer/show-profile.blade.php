@@ -116,7 +116,7 @@
               </a>
             </div>
           </li>
-          
+
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
           <span class="icon-menu"></span>
@@ -144,186 +144,110 @@
           </div>
         </div>
       </div>
-    
+
       <!-- partial -->
       <!-- partial:../../partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="indexx.html">
-              <i class="icon-grid menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#primary" aria-expanded="false" aria-controls="primary">
-              <i class="icon-book menu-icon"></i>
-              <span class="menu-title">primary</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="primary">
-              <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('affair/index') }}">
+                    <i class="icon-grid menu-icon"></i>
+                    <span class="menu-title">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#primary" aria-expanded="false"
+                    aria-controls="primary">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">primary</span>
+                    <i class="menu-arrow"></i>
+                </a>
 
-                <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#first-term"
-                    aria-expanded="false" aria-controls="first-term"> first term </a></li>
+                <div class="collapse" id="primary">
 
+                    <ul class="nav flex-column sub-menu">
 
-                <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#second-term"
-                    aria-expanded="false" aria-controls="second-term"> second term </a></li>
-
-
-               
-
-              </ul>
-            </div>
-            <div class="collapse" id="first-term">
-              <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-            <ul class="nav flex-column sub-menu">
-
-              <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-              </li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html">4</a></li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html">5</a></li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html">6</a></li>
-            </ul>
-            </div>
-            <div class="collapse" id="second-term">
-              <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-            <ul class="nav flex-column sub-menu">
-
-              <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-              </li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html">4</a></li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html">5</a></li>
-              <li class="nav-item"> <a class="nav-link" href="levels.html">6</a></li>
-            </ul>
-            </div>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#middle" aria-expanded="false" aria-controls="middle">
-                          <i class="icon-book menu-icon"></i>
-                          <span class="menu-title">middle</span>
-                          <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="middle">
-                          <ul class="nav flex-column sub-menu">
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#f-term"
-                                aria-expanded="false" aria-controls="f-term"> first term </a></li>
-            
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#s-term"
-                                aria-expanded="false" aria-controls="s-term"> second term </a></li>
-            
-            
-                           
-            
-                          </ul>
-                        </div>
-                        <div class="collapse" id="f-term">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-                          
-                        </ul>
-                        </div>
-            
-                        <div class="collapse" id="s-term">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-                          
-                        </ul>
-                        </div>
-            
-                        <li class="nav-item">
-                          <a class="nav-link" data-toggle="collapse" href="#secondary" aria-expanded="false" aria-controls="secondary">
-                            <i class="icon-book menu-icon"></i>
-                            <span class="menu-title">secondary</span>
-                            <i class="menu-arrow"></i>
-                          </a>
-                          <div class="collapse" id="secondary">
-                            <ul class="nav flex-column sub-menu">
-              
-                              <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#f-t"
-                                  aria-expanded="false" aria-controls="f-t"> first term </a></li>
-              
-              
-                              <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#s-t"
-                                  aria-expanded="false" aria-controls="s-t"> second term </a></li>
-              
-              
-                             
-              
-                            </ul>
-                          </div>
-                          <div class="collapse" id="f-t">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                          <ul class="nav flex-column sub-menu">
-              
-                            <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-                            
-                          </ul>
-                          </div>
-                          <div class="collapse" id="s-t">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                          <ul class="nav flex-column sub-menu">
-              
-                            <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-                            
-                          </ul>
-                          </div>
-              
-                          
+                        <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                        <li class="nav-item"> <a class="nav-link"> 2 </a>
                         </li>
-         
-          <li class="nav-item">
-            <a class="nav-link" href="add-student.html">
-              <i class="icon-plus menu-icon"></i>
-              <span class="menu-title">Add Student</span>
-            </a>
-          </li>
-         
-          
-         
-         
-        
-          
+                        <li class="nav-item"> <a class="nav-link">3</a></li>
+                        <li class="nav-item"> <a class="nav-link">4</a></li>
+                        <li class="nav-item"> <a class="nav-link">5</a></li>
+                        <li class="nav-item"> <a class="nav-link">6</a></li>
+                    </ul>
+                </div>
+
+
+
+            </li>
+            <!-- ************************************************************************** -->
+            <!-- **************************************************************************************** -->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#middle" aria-expanded="false"
+                    aria-controls="middle">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">middle</span>
+                    <i class="menu-arrow"></i>
+                </a>
+
+                <div class="collapse" id="middle">
+                    <ul class="nav flex-column sub-menu">
+
+                        <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                        <li class="nav-item"> <a class="nav-link"> 2 </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link">3</a></li>
+
+                    </ul>
+                </div>
+
+            </li>
+            <!-- *************************************************************************** -->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#secondary" aria-expanded="false"
+                    aria-controls="secondary">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">secondary</span>
+                    <i class="menu-arrow"></i>
+                </a>
+
+                <div class="collapse" id="secondary">
+                    <ul class="nav flex-column sub-menu">
+
+                        <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
+
+                    </ul>
+                </div>
+
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('affair/create') }}">
+                    <i class="icon-plus menu-icon"></i>
+                    <span class="menu-title">Add Student</span>
+                </a>
+            </li>
+
         </ul>
-      </nav>
+    </nav>
       <!-- partial -->
-      <div class="main-panel">          
+      <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-            
-           
+
+
             <div class="col-md-10 grid-margin stretch-card">
               <div class="card">
                 <div class="row">
                     <div class="card-body">
                         <!-- <h4 class="card-title">Basic Table</h4>
                         <p class="card-description">
-                         
+
                         </p> -->
-                   
+
                             <ul class="nav nav-tabs" id="myTab" >
                                 <li class="nav-item">
                                     <a href="#Basic-Data" class="nav-link active" data-bs-toggle="tab" style=" color: rgb(75, 73, 172);" >Basic Data</a>
@@ -337,7 +261,7 @@
                               <li class="nav-item">
                                     <a href="#Performance" class="nav-link" data-bs-toggle="tab" style=" color: rgb(75, 73, 172);"> Performance</a>
                                 </li>
-                                
+
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="Basic-Data">
@@ -345,7 +269,7 @@
                                       <img src="images/avatar2.jpg" style="width: 10%; margin-bottom: 20px;">
                                       <div class="table-responsive">
                                         <table class="table  table-striped ">
-                                          
+
                                           <tbody>
                                             <tr>
                                                 <th scope="row">Name:</th>
@@ -354,39 +278,39 @@
                                             <tr>
                                                 <th scope="row">Ssn:</th>
                                                 <td>123</td>
-                                              
+
                                             </tr>
                                             <tr>
                                                 <th scope="row">Contury:</th>
                                                 <td>Egypt</td>
-                                              
+
                                             </tr>
                                             <tr>
                                                 <th scope="row">Birth Date:</th>
                                                 <td colspan="2">12/2/2004</td>
-                                             
+
                                             </tr>
                                             <tr>
                                                 <th scope="row">Gender:</th>
                                                 <td colspan="2">Male</td>
-                                                
+
                                               </tr>
                                               <tr>
                                                 <th scope="row">Educational Stage:</th>
                                                 <td colspan="2">#</td>
-                                                
+
                                               </tr>
                                               <tr>
                                                 <th scope="row">Level:</th>
                                                 <td colspan="2">#</td>
-                                                
+
                                               </tr>
                                               <tr>
                                                 <th scope="row">town:</th>
                                                 <td colspan="2">#</td>
-                                                
+
                                               </tr>
-                                            
+
                                           </tbody>
                                         </table>
                                       </div>
@@ -394,115 +318,115 @@
                                 </div>
                                 <div class="tab-pane fade" id="Social-Data"  >
                                     <div class="form-2">
-                                        
-                                       
+
+
                                           <div class="section" style="text-align: center; font-weight: bold;">Father Information</div>
                                           <div class="inner-wrap">
                                             <table  class="table table-striped" >
-                                          
+
                                               <tbody>
                                                 <tr>
                                                   <th scope="row">Name:</th>
                                                   <td>Ali</td>
-                                                  
+
                                                 </tr>
                                                 <tr>
                                                   <th scope="row">Job:</th>
                                                   <td>Doctor </td>
-                                                  
+
                                                 </tr>
                                                 <tr>
                                                   <th scope="row">Father's Presence:</th>
                                                   <td>Alive</td>
-                                                  
+
                                                 </tr>
-                                                
+
                                               </tbody>
                                             </table>
                                           </div>
-                                      
+
                                           <div class="section" style="text-align: center; font-weight: bold;">Mother Information</div>
                                           <div class="inner-wrap">
                                             <table  class="table table-striped">
-                                          
+
                                               <tbody>
                                                 <tr>
                                                   <th scope="row">Name:</th>
                                                   <td>#</td>
-                                                  
+
                                                 </tr>
                                                 <tr>
                                                   <th scope="row">Job:</th>
                                                   <td>#</td>
-                                                  
+
                                                 </tr>
                                                 <tr>
                                                   <th scope="row">Mother's Presence:</th>
                                                   <td>#</td>
-                                                  
+
                                                 </tr>
-                                                
+
                                               </tbody>
                                             </table>
                                           </div>
-                                      
-                                          
-                                             
+
+
+
                                         </div>
                                 </div>
                                 <div class="tab-pane fade" id="Health-Data">
                                     <div class="form-3">
-                                        
+
                                         <form>
                                             <div class="section"></div>
                                             <div class="inner-wrap">
                                               <table  class="table  table-striped table-bordered">
-                                      
+
                                                 <tbody>
                                                   <tr>
                                                     <th scope="row">chronic disease:</th>
                                                     <td>*</td>
-                                                    
+
                                                   </tr>
                                                   <tr>
                                                     <th scope="row">disease degree:</th>
                                                     <td>**</td>
-                                                    
+
                                                   </tr>
                                                   <tr>
                                                     <th scope="row">Height:</th>
                                                     <td>160</td>
-                                                    
+
                                                   </tr>
                                                   <tr>
                                                     <th scope="row">weight:</th>
                                                     <td>50</td>
-                                                    
+
                                                   </tr>
                                                   <tr>
                                                     <th scope="row">Distinctive physical characteristics:</th>
                                                     <td>***</td>
-                                                    
+
                                                   </tr>
-                                                  
+
                                                 </tbody>
                                               </table>
-                                                
+
                                             </div>
-                                        
+
                                             <div class="section"></div>
-                                            
-                                        
-                                            
-                                            
+
+
+
+
                                         </form>
                                         </div>
-                                    
+
                                 </div>
                               <div class="tab-pane fade " id="Performance">
                               <div class="form-4" style="height: 400px;">
                                 <div>
-                                <select id='se' 
+                                <select id='se'
                                 style="margin-top: 20px; padding: 3px;
                                 margin: 20px;
                                  -webkit-appearance: none;
@@ -515,12 +439,12 @@
                             transition: border-color .1s ease-in-out,box-shadow .1s ease-in-out;
                             border: 1px solid #ddd;
                             border-radius: 14px;">
-                                
-                                
+
+
                                     <option>Choose semester</option>
                                     <option value="first">First semester</option>
                                     <option value="second">Second semster</option>
-                                    
+
                                 </select>
                               </div>
                             <div class="b" id="box" >
@@ -537,12 +461,12 @@
                                       <th> Practical</th>
                                       <th>Final</th>
                                       <th>Behavior</th>
-                                      
+
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
-                                        
+
                                       <td>Math</td>
                                       <td>10</td>
                                       <td>10</td>
@@ -554,7 +478,7 @@
 
                                     </tr>
                                     <tr>
-                                        
+
                                         <td>Arabic</td>
                                       <td>10</td>
                                       <td>10</td>
@@ -565,7 +489,7 @@
                                       <td>  </td>
                                       </tr>
                                       <tr>
-                                        
+
                                         <td>English</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -576,7 +500,7 @@
                                         <td>  </td>
                                       </tr>
                                     <tr>
-                                        
+
                                         <td>Science</td>
                                         <td>10</td>
                                       <td>10</td>
@@ -586,11 +510,11 @@
                                       <td>50</td>
                                       <td>Makes a fight in class  </td>
                                       </tr>
-                                      
-                                      
+
+
                                     </tr>
-                                   
-                                     
+
+
                                   </tbody>
                                 </table>
                               </div>
@@ -601,7 +525,7 @@
                                       <td> Activity</td>
                                       <td>Performance</td>
                                       <td>Behavior</td>
-                                      
+
                                     </tr>
                                   </thead>
                                   <tbody>
@@ -612,13 +536,13 @@
                                     </tr>
                                   </tbody>
                                 </table>
-                              
+
                               </div>
-                            
-                              
-                            
-                             
-                            
+
+
+
+
+
                               <!-- <select id="activity1"style="margin-top: 20px; padding: 3px;
                               -webkit-appearance: none;
                              -moz-appearance: none;
@@ -634,16 +558,16 @@
                                 <option value="football1">Football</option>
                                 <option value="vollyball1">Vollyball</option>
                                 <option value="tennis1">Tennis</option>
-                                
+
                               </select> -->
-                            
+
                               <!-- <div class="b2" id="box2" style="display: none; margin-top: 10px; ">
                               <table  class="table ">
                                 <thead>
                                   <tr>
                                     <td>Performance</td>
                                     <td>Behavior</td>
-                                    
+
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -653,43 +577,43 @@
                                   </tr>
                                 </tbody>
                               </table>
-                            
+
                             </div> -->
-                            
+
                             </div>
-                                
-                                
-                              
+
+
+
                             </div>
                         </div>
                             </div>
-                            
-                        
-                        
-                        
-                      
+
+
+
+
+
                       </div>
-                  
+
                 </div>
               </div>
             </div>
             <div class="col-md-6 grid-margin stretch-card">
-              
+
             </div>
             <div class="col-12 grid-margin">
               <!-- <div class="card">
                 <div class="row">
                   <div class="col-md-6">
-                 
-                
+
+
                   </div>
                 </div>
               </div> -->
             </div>
-           
+
           </div>
         </div>
-       
+
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
@@ -717,8 +641,8 @@
   <script src="js/settings.js"></script>
   <script src="js/todolist.js"></script>
   <script src="js/show.js"></script>
-  
-  
+
+
   <!-- endinject -->
 </body>
 

@@ -79,3 +79,13 @@ Route::post('affair/update','studentAffairsController@update');
 Route::delete('affair/delete/{id}','studentAffairsController@destroy');
 Route::get('affair/show/{id}','studentAffairsController@show');
 //---------------------------------------------------------------
+
+// -------------------- Entry-Officer ---------------------------
+Route::get('entry/home','entryOfficerController@home');
+Route::get('entry/index','entryOfficerController@index');
+Route::get('entry/create','entryOfficerController@create');
+Route::post('entry/store','entryOfficerController@store');
+Route::get('entry/edit/{id}','entryOfficerController@edit');
+Route::post('entry/update','entryOfficerController@update');
+Route::delete('entry/delete/{id}','entryOfficerController@destroy');
+Route::get('entry/show/{id}','entryOfficerController@show');

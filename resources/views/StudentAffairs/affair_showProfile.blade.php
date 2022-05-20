@@ -112,51 +112,72 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#primary" aria-expanded="false"
                             aria-controls="primary">
-                            <i class="icon-head menu-icon"></i>
+                            <i class="icon-book menu-icon"></i>
                             <span class="menu-title">primary</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="primary">
+
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="#">1</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="#">2</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="#">3</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="#">4</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="#">5</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="#">6</a></li>
+
+                                <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                                <li class="nav-item"> <a class="nav-link"> 2 </a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link">3</a></li>
+                                <li class="nav-item"> <a class="nav-link">4</a></li>
+                                <li class="nav-item"> <a class="nav-link">5</a></li>
+                                <li class="nav-item"> <a class="nav-link">6</a></li>
                             </ul>
                         </div>
+
+
+
                     </li>
+                    <!-- ************************************************************************** -->
+                    <!-- **************************************************************************************** -->
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#middle" aria-expanded="false"
                             aria-controls="middle">
-                            <i class="icon-head menu-icon"></i>
+                            <i class="icon-book menu-icon"></i>
                             <span class="menu-title">middle</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="middle">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="#">7</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">8</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">9</a></li>
+
+                                <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                                <li class="nav-item"> <a class="nav-link"> 2 </a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link">3</a></li>
+
                             </ul>
                         </div>
+
                     </li>
+                    <!-- *************************************************************************** -->
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#secondary" aria-expanded="false"
                             aria-controls="secondary">
-                            <i class="icon-head menu-icon"></i>
+                            <i class="icon-book menu-icon"></i>
                             <span class="menu-title">secondary</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="secondary">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link">10</a></li>
-                                <li class="nav-item"> <a class="nav-link">11</a></li>
-                                <li class="nav-item"> <a class="nav-link">12</a></li>
+
+                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
+
                             </ul>
                         </div>
+
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('affair/create') }}">
                             <i class="icon-plus menu-icon"></i>
@@ -178,7 +199,7 @@
                                     <div class="card-body">
                                         <!-- <h4 class="card-title">Basic Table</h4>
                         <p class="card-description">
-                         
+
                         </p> -->
 
                                         <ul class="nav nav-tabs" id="myTab">
@@ -230,7 +251,7 @@
                                                                     <th scope="row">Address:</th>
                                                                     <td>
                                                                         @foreach ($data as $info)
-                                                                            {{ $info->governorate . ' / ' . $info->city . ' / ' . $info->village }}
+                                                                            {{ $info->gov_name . ' / ' . $info->city_name . ' / ' . $info->district_name }}
                                                                         @endforeach
                                                                     </td>
                                                                 </tr>
@@ -258,7 +279,7 @@
                                                                          <td colspan="2" >{{ $info->level }}</td>
 
                                                                     @endforeach
-                                                                   
+
 
                                                                 </tr>
                                                                 <tr>
@@ -269,7 +290,7 @@
                                                                @endforeach
 
                                                                 </tr>
-                                                                
+
 
                                                             </tbody>
                                                         </table>
@@ -283,7 +304,7 @@
                                                   <div class="section"
                                                         style="text-align: center; font-weight: bold;">Father
                                                         Information</div>
-                                                        
+
                                                      <div class="inner-wrap">
                                                         <table class="table table-striped">
 
@@ -321,7 +342,7 @@
                                                                     <th scope="row">Phone1:</th>
                                                                     <td>
                                                                         @foreach ($data as $info)
-                                                                            {{ '0'.$info->phone1 }}
+                                                                            {{ '0'.$info->father_phone}}
                                                                         @endforeach
                                                                     </td>
 
@@ -332,12 +353,12 @@
                                                         </table>
                                                     </div>
 
-                                                   
+
 
                                                     <div class="section"
                                                         style="text-align: center; font-weight: bold;">Mother
                                                         Information</div>
-                                                        
+
                                                      <div class="inner-wrap">
                                                         <table class="table table-striped">
 
@@ -375,7 +396,7 @@
                                                                     <th scope="row">Phone2:</th>
                                                                     <td>
                                                                         @foreach ($data as $info)
-                                                                            {{ '0'.$info->phone2 }}
+                                                                            {{ '0'.$info->mother_phone }}
                                                                         @endforeach
                                                                     </td>
 
@@ -403,7 +424,7 @@
                                                                         <th scope="row">chronic disease:</th>
                                                                         <td>
                                                                           @foreach ($data as $dis)
-                                                                          {{ $dis->have_chronic }}
+                                                                          {{ $dis->chronic }}
                                                                       @endforeach
                                                                         </td>
 
@@ -472,7 +493,7 @@
 
                                             </div>
 
-                                    
+
 
 
                                         </div>
@@ -492,7 +513,7 @@
 
                 </div>
                 <div class="col-12 grid-margin">
-                
+
                 </div>
 
             </div>

@@ -111,25 +111,9 @@
                             <span class="menu-title">primary</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="primary">
-                            <ul class="nav flex-column sub-menu">
 
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#fi-term" aria-expanded="false" aria-controls="fi-term"> first term </a>
-                                </li>
-
-
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#se-term" aria-expanded="false" aria-controls="se-term"> second term </a>
-                                </li>
-
-
-
-
-                            </ul>
-                        </div>
-                        <div class="collapse" id="fi-term">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
                             <ul class="nav flex-column sub-menu">
 
                                 <li class="nav-item"> <a class="nav-link"> 1 </a></li>
@@ -142,19 +126,7 @@
                             </ul>
                         </div>
 
-                        <div class="collapse" id="se-term">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                            <ul class="nav flex-column sub-menu">
 
-                                <li class="nav-item"> <a class="nav-link"> 1 </a></li>
-                                <li class="nav-item"> <a class="nav-link"> 2 </a>
-                                </li>
-                                <li class="nav-item"> <a class="nav-link">3</a></li>
-                                <li class="nav-item"> <a class="nav-link">4</a></li>
-                                <li class="nav-item"> <a class="nav-link">5</a></li>
-                                <li class="nav-item"> <a class="nav-link">6</a></li>
-                            </ul>
-                        </div>
 
                     </li>
                     <!-- ************************************************************************** -->
@@ -166,37 +138,8 @@
                             <span class="menu-title">middle</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="middle">
-                            <ul class="nav flex-column sub-menu">
-
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#f-term" aria-expanded="false" aria-controls="f-term"> first term </a>
-                                </li>
-
-
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#s-term" aria-expanded="false" aria-controls="s-term"> second term </a>
-                                </li>
-
-
-
-
-                            </ul>
-                        </div>
-                        <div class="collapse" id="f-term">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                            <ul class="nav flex-column sub-menu">
-
-                                <li class="nav-item"> <a class="nav-link"> 1 </a></li>
-                                <li class="nav-item"> <a class="nav-link"> 2 </a>
-                                </li>
-                                <li class="nav-item"> <a class="nav-link">3</a></li>
-
-                            </ul>
-                        </div>
-
-                        <div class="collapse" id="s-term">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
                             <ul class="nav flex-column sub-menu">
 
                                 <li class="nav-item"> <a class="nav-link"> 1 </a></li>
@@ -216,25 +159,10 @@
                             <span class="menu-title">secondary</span>
                             <i class="menu-arrow"></i>
                         </a>
+
                         <div class="collapse" id="secondary">
                             <ul class="nav flex-column sub-menu">
 
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#f-t" aria-expanded="false" aria-controls="f-t"> first term </a></li>
-
-
-                                <li class="nav-item"> <a class="nav-link" data-toggle="collapse"
-                                        href="#s-t" aria-expanded="false" aria-controls="s-t"> second term </a></li>
-
-
-
-
-                            </ul>
-                        </div>
-                        <div class="collapse" id="f-t">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                            <ul class="nav flex-column sub-menu">
-
                                 <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
                                 <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
                                 </li>
@@ -242,19 +170,7 @@
 
                             </ul>
                         </div>
-                        <div class="collapse" id="s-t">
-                            <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                            <ul class="nav flex-column sub-menu">
-
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
-                                </li>
-                                <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
-
-                            </ul>
-                        </div>
-
-
+                        
                     </li>
 
                     <li class="nav-item">
@@ -286,13 +202,13 @@
                                         <div class="container">
                                             @if ($message = Session::get('success'))
                                                 <div class="alert alert-success" role="alert">
-                                    
+
                                                     {{ $message }}
-                                    
+
                                                 </div>
                                             @endif
                                         </div>
-                                        
+
 
                                         <div class="table-responsive">
                                             <table class="table">
@@ -319,9 +235,9 @@
                                                             <td>{{ $info->fname . ' ' . $info->mname}}</td>
                                                             <td>{{ $info->ssn }}</td>
                                                             <td>{{ $info->sex }}</td>
-                                                            <td>{{ $info->name }}</td>
+                                                            <td>{{ $info->nation_name }}</td>
                                                             <td>{{ $info->relig_name }}</td>
-                                                            <td>{{ $info->city.'/'. $info->village }}</td>
+                                                            <td>{{ $info->gov_name.' / '. $info->city_name. ' / '.$info->district_name }}</td>
                                                             <td>
                                                                 <a href='{{ url('affair/show/' . $info->id ) }}' class='btn btn-info m-r-1em'>Show</a>
 
@@ -356,8 +272,10 @@
                                                                     </div>
 
                                                                     <div class="modal-body">Delete...!<br>
-
-                                                                        {{$info->fname . ' ' . $info->mname }}</div>
+                                                                        <div class="alert-danger p-2 m-2">
+                                                                            {{$info->fname . ' ' . $info->mname }}
+                                                                        </div>
+                                                                    </div>
 
                                                                     <div class="modal-footer">
 

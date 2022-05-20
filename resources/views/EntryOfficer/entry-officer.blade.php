@@ -112,7 +112,7 @@
               </a>
             </div>
           </li>
-         
+
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
           <span class="icon-menu"></span>
@@ -140,168 +140,95 @@
           </div>
         </div>
       </div>
-     
+
       <!-- partial -->
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="entry-officer.html">
-              <i class="icon-grid menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#primary" aria-expanded="false" aria-controls="primary">
-              <i class="icon-book menu-icon"></i>
-              <span class="menu-title">primary</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="primary">
-              <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('affair/index') }}">
+                    <i class="icon-grid menu-icon"></i>
+                    <span class="menu-title">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#primary" aria-expanded="false"
+                    aria-controls="primary">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">primary</span>
+                    <i class="menu-arrow"></i>
+                </a>
 
-                <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#first-term"
-                    aria-expanded="false" aria-controls="first-term"> first term </a></li>
+                <div class="collapse" id="primary">
+
+                    <ul class="nav flex-column sub-menu">
+
+                        <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                        <li class="nav-item"> <a class="nav-link"> 2 </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link">3</a></li>
+                        <li class="nav-item"> <a class="nav-link">4</a></li>
+                        <li class="nav-item"> <a class="nav-link">5</a></li>
+                        <li class="nav-item"> <a class="nav-link">6</a></li>
+                    </ul>
+                </div>
 
 
-                <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#second-term"
-                    aria-expanded="false" aria-controls="second-term"> second term </a></li>
 
+            </li>
+            <!-- ************************************************************************** -->
+            <!-- **************************************************************************************** -->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#middle" aria-expanded="false"
+                    aria-controls="middle">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">middle</span>
+                    <i class="menu-arrow"></i>
+                </a>
 
-               
+                <div class="collapse" id="middle">
+                    <ul class="nav flex-column sub-menu">
 
-              </ul>
-            </div>
-            <div class="collapse" id="first-term">
-              <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-            <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link"> 1 </a></li>
+                        <li class="nav-item"> <a class="nav-link"> 2 </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link">3</a></li>
 
-              <li class="nav-item"> <a class="nav-link" href="officer-levels.html"> 1 </a></li>
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html" > 2 </a>
-              </li>
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html">3</a></li>
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html">4</a></li>
-              <li class="nav-item"> <a class="nav-link" href="officer-levels.html">5</a></li>
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html">6</a></li>
-            </ul>
-            </div>
-            <div class="collapse" id="second-term">
-              <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-            <ul class="nav flex-column sub-menu">
+                    </ul>
+                </div>
 
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html"> 1 </a></li>
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html"> 2 </a>
-              </li>
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html">3</a></li>
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html" >4</a></li>
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html">5</a></li>
-              <li class="nav-item"> <a class="nav-link"  href="officer-levels.html" >6</a></li>
-            </ul>
-            </div>
-                      </li>
+            </li>
+            <!-- *************************************************************************** -->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#secondary" aria-expanded="false"
+                    aria-controls="secondary">
+                    <i class="icon-book menu-icon"></i>
+                    <span class="menu-title">secondary</span>
+                    <i class="menu-arrow"></i>
+                </a>
 
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#middle" aria-expanded="false" aria-controls="middle">
-                          <i class="icon-book menu-icon"></i>
-                          <span class="menu-title">middle</span>
-                          <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="middle">
-                          <ul class="nav flex-column sub-menu">
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#f-term"
-                                aria-expanded="false" aria-controls="f-term"> first term </a></li>
-            
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#s-term"
-                                aria-expanded="false" aria-controls="s-term"> second term </a></li>
-            
-            
-                           
-            
-                          </ul>
-                        </div>
-                        <div class="collapse" id="f-term">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link"  href="officer-levels.html" > 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link"  href="officer-levels.html" > 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link"  href="officer-levels.html">3</a></li>
-                          
-                        </ul>
-                        </div>
-            
-                        <div class="collapse" id="s-term">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link"  href="officer-levels.html" > 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link"  href="officer-levels.html"> 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link"  href="officer-levels.html" >3</a></li>
-                          
-                        </ul>
-                        </div>
-            
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#secondary" aria-expanded="false" aria-controls="secondary">
-                          <i class="icon-book menu-icon"></i>
-                          <span class="menu-title">secondary</span>
-                          <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="secondary">
-                          <ul class="nav flex-column sub-menu">
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#f-t"
-                                aria-expanded="false" aria-controls="f-t"> first term </a></li>
-            
-            
-                            <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#s-t"
-                                aria-expanded="false" aria-controls="s-t"> second term </a></li>
-            
-            
-                           
-            
-                          </ul>
-                        </div>
-                        <div class="collapse" id="f-t">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">first term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link"  href="officer-levels.html"> 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link" href="officer-levels.html"> 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link" >3</a></li>
-                          
-                        </ul>
-                        </div>
-                        <div class="collapse" id="s-t">
-                          <h5 style="text-align:center; color: #4b49ac; font-size: 16px">second-term</h5>
-                        <ul class="nav flex-column sub-menu">
-            
-                          <li class="nav-item"> <a class="nav-link" > 1 </a></li>
-                          <li class="nav-item"> <a class="nav-link" > 2 </a>
-                          </li>
-                          <li class="nav-item"> <a class="nav-link" >3</a></li>
-                          
-                        </ul>
-                        </div>
-            
-                        
-                      </li>
-          
-        
-          
-         
-         
-        
-          
-          
+                <div class="collapse" id="secondary">
+                    <ul class="nav flex-column sub-menu">
+
+                        <li class="nav-item"> <a class="nav-link" href="levels.html"> 1 </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="levels.html"> 2 </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="levels.html">3</a></li>
+
+                    </ul>
+                </div>
+
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('affair/create') }}">
+                    <i class="icon-plus menu-icon"></i>
+                    <span class="menu-title">Add Student</span>
+                </a>
+            </li>
+
         </ul>
-      </nav>
+    </nav>
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
@@ -310,7 +237,7 @@
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
                   <h3 class="font-weight-bold">Welcome </h3>
-                  
+
                 </div>
                 <div class="col-12 col-xl-4">
                  <div class="justify-content-end d-flex">
@@ -356,7 +283,7 @@
                     <div class="card-body">
                       <p class="mb-4">Student Number</p>
                       <p class="fs-30 mb-2">700</p>
-                     
+
                     </div>
                   </div>
                 </div>
@@ -365,7 +292,7 @@
                     <div class="card-body">
                       <p class="mb-4">Recent Registrations </p>
                       <p class="fs-30 mb-2">80</p>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -376,7 +303,7 @@
                     <div class="card-body">
                       <p class="mb-4">Number Of Activities</p>
                       <p class="fs-30 mb-2">8</p>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -385,21 +312,21 @@
                     <div class="card-body">
                       <p class="mb-4">Number Of Social Worker</p>
                       <p class="fs-30 mb-2">8</p>
-                     
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-         
-       
+
+
           <div class="row">
             <!-- <div class="col-md-7 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <p class="card-title mb-0">Recent Registrations</p>
-                 
+
                 </div>
               </div>
             </div> -->
@@ -413,7 +340,7 @@
 												<div class="form-check form-check-flat">
 													<label class="form-check-label">
 														<input class="checkbox" type="checkbox">
-														Add grades 
+														Add grades
 													</label>
 												</div>
 												<i class="remove ti-close"></i>
@@ -422,7 +349,7 @@
 												<div class="form-check form-check-flat">
 													<label class="form-check-label">
 														<input class="checkbox" type="checkbox" checked>
-                                                        Add sports scores 
+                                                        Add sports scores
 													</label>
 												</div>
 												<i class="remove ti-close"></i>
@@ -464,8 +391,8 @@
 							</div>
             </div>
           </div>
-         
-        
+
+
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
@@ -478,7 +405,7 @@
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
-    </div>   
+    </div>
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
